@@ -8,6 +8,19 @@
     <link rel="icon" type="image/x-icon" href="1.png">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
 <body>
     <header>
         <nav>
@@ -30,9 +43,17 @@
     <a href="https://www.facebook.com/EngageNepalwithScience/"><img src="3.png"width=49px height="49px"></a>
     <img src="4.png"width=49px height="49px">
     <a href="https://twitter.com/engagenepalsci"><img src="5.png"width=49px height="49px"></a>
+    <button onclick="myFunction()">Toggle dark mode</button>
+
 
     <p>PRIVACY POLICY</p>
     <p>ENGAGE NEPAL WITH SCIENCE © ALL RIGHTS RESERVED</p>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
 </div>
 </body>
 </html>
